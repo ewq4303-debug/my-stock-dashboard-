@@ -1,0 +1,32 @@
+name: Stock Data Update
+
+on:
+  schedule:
+    - cron: '0 9 * * 1-5' # 台北時間週一至週五下午 5 點執行 (UTC 9:00)
+  workflow_dispatch: # 允許手動執行
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run Scraper
+        run: python scripts/scraper.py # 確保腳本將 JSON 存入 public/data/
+
+      - name: Commit and Push
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add public/data/*.json
+          git commit -m "Update stock data: $(date)" || echo "No changes to commit"
+          git push
