@@ -1,8 +1,69 @@
 {
-    "stock_id": "2330",
-    "name": "台積電",
-    "update_time": "2026-05-04 10:17:45",
-    "it_buy": 1250,
-    "major_ratio": 75.4,
-    "chip_score": 1
+    "update_time": "2026-05-05 12:16:10",
+    "stocks": {
+        "2330": {
+            "stock_id": "2330",
+            "name": "台積電",
+            "price": 800,
+            "inst_foreign": 1500,
+            "inst_trust": 450,
+            "inst_dealer": -120,
+            "major_holders": 75.8,
+            "retail_holders": 12.4,
+            "top_brokers": "摩根大通(+500), 凱基台北(+300)",
+            "margin_buy": 200,
+            "short_sell": -50,
+            "sbl_balance": 12000,
+            "sbl_change": 150,
+            "chip_score": 2
+        },
+        "2454": {
+            "stock_id": "2454",
+            "name": "聯發科",
+            "price": 800,
+            "inst_foreign": 1500,
+            "inst_trust": 450,
+            "inst_dealer": -120,
+            "major_holders": 75.8,
+            "retail_holders": 12.4,
+            "top_brokers": "摩根大通(+500), 凱基台北(+300)",
+            "margin_buy": 200,
+            "short_sell": -50,
+            "sbl_balance": 12000,
+            "sbl_change": 150,
+            "chip_score": 2
+        },
+        "6669": {
+            "stock_id": "6669",
+            "name": "緯穎",
+            "price": 800,
+            "inst_foreign": 1500,
+            "inst_trust": 450,
+            "inst_dealer": -120,
+            "major_holders": 75.8,
+            "retail_holders": 12.4,
+            "top_brokers": "摩根大通(+500), 凱基台北(+300)",
+            "margin_buy": 200,
+            "short_sell": -50,
+            "sbl_balance": 12000,
+            "sbl_change": 150,
+            "chip_score": 2
+        },
+        "2317": {
+            "stock_id": "2317",
+            "name": "鴻海",
+            "price": 800,
+            "inst_foreign": 1500,
+            "inst_trust": 450,
+            "inst_dealer": -120,
+            "major_holders": 75.8,
+            "retail_holders": 12.4,
+            "top_brokers": "摩根大通(+500), 凱基台北(+300)",
+            "margin_buy": 200,
+            "short_sell": -50,
+            "sbl_balance": 12000,
+            "sbl_change": 150,
+            "chip_score": 2
+        }
+    }
 }
